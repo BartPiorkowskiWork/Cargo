@@ -1,0 +1,151 @@
+﻿body {
+    background-color:#f3f3f399;
+   
+}
+
+
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    max-height: 940px;
+    background-image: linear-gradient(to right , #00182E , #00182E00), url("images/bannerBackgroundOne.png");
+    background-position: 100% center;
+    background-size:contain;
+    
+}
+
+.navBar{
+    height:100px;
+    width:calc(100% - 78px);   
+    background-color:transparent;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end; 
+    padding:0px 39px 0px 39px;
+   
+   
+    }
+
+.logo
+{
+   height:33px;
+   width:33%;
+   padding:3px 0px 3px 0px;
+}
+
+.logo img{
+    height:100%;
+    width:auto;
+}
+
+.nav {
+    height: 33px;
+    width: 33%;   
+    padding: 5px 0px 3px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navButtons {
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:14px;
+    margin: 0;
+    padding:0;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;  
+   
+}
+
+    .navButtons li {
+        display: inline;
+        
+    }
+
+.searchContact {
+    height: 33px;
+    width: 33%;    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px 0px 3px 0px;
+}
+
+
+.searchInput
+{
+    height:100%;
+    width:70%;
+    padding:0px 5px 0px 0px;
+    display:flex;
+    justify-content:flex-end;
+    box-sizing:border-box;
+}
+
+    .searchInput input {
+        height: 100%;
+        width: 35px;
+        background-image: url("images/search.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #00172D;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        transition: width 300ms ease-in, background-position 250ms ease-in, max-width 300ms ease-in;
+        
+    }
+
+        .searchInput input:hover {
+            height: 100%;
+            width: 220px;            
+            background-image: url("images/search.png");
+            background-position: 2% center;
+            background-repeat: no-repeat;
+            background-color: #00172D;
+            outline: none;
+            border: none;
+            transition: width 300ms ease-out,background-position 250ms ease-out;            
+           
+        }
+
+        .searchInput input:focus {
+            height: 100%;
+            width: 220px;           
+            background-image: url("images/search.png");
+            background-image: url("images/search.png");
+            background-position: 2% center;
+            background-repeat: no-repeat;
+            background-color: #00172D;
+            padding: 0px 5px 0px 25px;
+            color: #FFFFFF;
+            outline: none;
+            border: none;
+        }
+
+
+.contact {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    width: 130px;
+    height: 100%;
+    background-color: #93B832;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.textContent {
+    color: #FFFFFF;
+}
