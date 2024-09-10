@@ -7,41 +7,89 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="banner">
-        <div class="navBar">
-            <div class="logo">
-                <img src="images/logo.png" alt="Company logo"/>
-            </div>      
-            <div class="nav">
-                <ul class="navButtons">
-                    <li>About</li>
-                    <li>Our Team</li>
-                    <li>Services<img src="C:\Users\BJP\source\bartrepos\Cargo\images\chievron.png" alt="chievron" class="chievron" /></li>
-                    <li>News</li>
-                    <li>Events</li>
-                </ul> 
-            </div>
-            <div class="searchContact">
-                <div class="searchInput">               
-                    <input type="search" />                    
+    <div class="bannerOne" id="banner">
+        <div class="navBar" id="navBar">
+            <div class="navContent">
+                <div class="logo">
+                    <img id="logoImage" src="images/logo.png" alt="Company logo" />
                 </div>
-                <div class="contact" onclick="location.href='google.com';">Contact us<span>&rarr;</span></div>
+                <div class="nav">
+                    <ul class="navButtons">
+                        <li><a onmouseover="hideExpandedNav()" href="#">About</a></li>
+                        <li><a onmouseover="hideExpandedNav()" href="#">Our Team</a></li>
+                        <li><a href="#" id="navDrop">Services<img src="C:\Users\BJP\source\bartrepos\Cargo\images\chievron.png" alt="chievron" id="chievron" class="chievron" /></a></li>
+                        <li><a onmouseover="hideExpandedNav()" href="#">News</a></li>
+                        <li><a onmouseover="hideExpandedNav()" href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="searchContact">
+                    <div class="searchInput">
+                        <input type="search" />
+                    </div>
+                    <div class="contact" onclick="location.href='google.com';">Contact us<span>&rarr;</span></div>
+                </div>
+            </div>
+            <div class="expandedNav" id="expandedNav">
+                <div class="expandedNavContent" id="expandedNavContent">
+                    <div class="subNavLinks">
+
+                        <ul>
+                            <li><a href="#">Sub Page</a></li>
+                            <li><a href="#">Sub Page</a></li>
+                            <li><a href="#">Sub Page</a></li>
+                            <li><a href="#">Sub Page</a></li>
+                            <li><a href="#">Sub Page</a></li>
+                            <li><a href="#">Sub Page</a></li>
+                            <li><a href="#">Sub Page</a></li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="subNavBanner">
+
+                        <img src="images/navBanner.png" alt="nav banner" />
+                        <p>Header here</p>
+                        <p>With a sub line here</p>
+                    </div>
+
+                </div>
             </div>
         </div>
-
+       
         <div class="textContent">
-            This is our<br />
-            Main Header<br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum libero velit, sit amet suscipit mauris elementum id. Praesent interdum a ante ut dapibus.<br />
-            Find out more ->
 
+            <div class="textSlide textSlideActive fade">
+                <h1>
+                    <span style="font-size:2.1rem">This is our</span><br />
+                    Main Header
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum libero velit, sit amet suscipit mauris elementum id. Praesent interdum a ante ut dapibus.<p>
+            </div>
+            <div class="textSlide fade">
+                <h1>
+                    <span style="font-size:2.1rem">And this is a</span><br />
+                    Second Header
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum libero velit, sit amet suscipit mauris elementum id. Praesent interdum a ante ut dapibus.<p>
+            </div>
+            <div id="contentElements" class="contentElements">
+                <div class="findOutMore">
+                    <p>Find out more</p>
+                </div>
+                <div class="caruselIcons">
+                    <p class="slideIcon slideIconActive" ></p>
+                    <p class="slideIcon" ></p>
+
+                </div>
+            </div>
         </div>
-        <div class="caruselIcons">Something 3</div>
+       
 
 
     </div>
   
-
+    <div class="bodyContent"></div>
     <script src="scripts.js"></script>
 </body>
 </html>
